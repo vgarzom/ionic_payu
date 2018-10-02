@@ -1,0 +1,7 @@
+{
+  "name": "payu_example",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
