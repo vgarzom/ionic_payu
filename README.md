@@ -1,4 +1,4 @@
-## ionic_payu
+## Integración de apps Ionic con Payu Web Checkout
 Proyecto de ejemplo de la utilización de la pasarela de pagos payu dentro de aplicaciones móviles creadas en ionic 2 en adelante.
 
 ## Introducción
