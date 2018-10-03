@@ -20,6 +20,7 @@ Consultar ["Integración Web Checkout - Sandbox"](http://developers.payulatam.co
 Son obtenidas desde la consola de administración de Payu. Este ejemplo utiliza variables de prueba otorgadas por Payu.
 
 - referenceCode: Es un código único para cada transferencia. En una aplicación en producción podría generarse como mejor lo defina el desarrollador, Ej: referenceCode = userId + productId + consecutive
+- TAX_PERCENTAGE: porcentaje para calcular impuestos. En Colombia IVA
 
 ## Como ejecutar
 1. Por supuesto instalar ionic y su cli. [ionic get started](https://ionicframework.com/getting-started)
