@@ -7,8 +7,74 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-card>
+    <ion-card-header>
+      Datos de la compra
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Código de referencia</ion-label>
+          <ion-input type="text" [(ngModel)]="paymentData.referenceCode"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Descripición de la compra</ion-label>
+          <ion-input type="text" [(ngModel)]="paymentData.description"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Total</ion-label>
+          <ion-input type="number" [(ngModel)]="paymentData.amount"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Datos del comprador
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Nombre completo</ion-label>
+          <ion-input type="text" [(ngModel)]="paymentData.buyerFullName"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Correo</ion-label>
+          <ion-input type="text" [(ngModel)]="paymentData.buyerEmail"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Domicilio
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Dirección</ion-label>
+          <ion-input type="text" [(ngModel)]="paymentData.shippingAddress"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Ciudad</ion-label>
+          <ion-input type="text" [(ngModel)]="paymentData.shippingCity"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>País</ion-label>
+          <ion-input type="text" [(ngModel)]="paymentData.shippingCountry"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Teléfono</ion-label>
+          <ion-input type="text" [(ngModel)]="paymentData.telephone"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button full (click)="callPayu()">Pasar a la compra</button>
 </ion-content>
